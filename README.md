@@ -1,3 +1,12 @@
+# Order Food
+
+<li>A food ordering project with a responsive design.</li>
+<li>It was made using React.</li>
+<li>There are selected meals in the menu from which the user can singularly or plurally add items to the cart and can remove items from the cart.</li>
+<li>Things I have tried for the first time in this project include using useEffect, useContext, useReducer, useRef, and using Fragment.</li><br>
+
+<b>Check the app at</b> https://yilmazcite.github.io/order-food/
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
