@@ -1,0 +1,33 @@
+label {
+  font-weight: 600;
+}
+
+input {
+  margin-left: 0.8rem;
+  border-radius: 0.23rem;
+  padding: 0.3rem 0.2rem;
+  border-style: none;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  label {
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  input {
+    margin-left: 0.3rem;
+    padding: 0.3rem 0.4rem;
+  }
+}
+
+@media (max-width: 586px) {
+  label {
+    display: none;
+  }
+  input {
+    margin: 0;
+  }
+}

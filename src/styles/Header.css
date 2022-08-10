@@ -1,0 +1,156 @@
+/*Header.js*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 1.2rem 10rem;
+  z-index: 10;
+
+  color: #fff;
+  background-color: #c23d18;
+}
+
+/*Header.js*/
+.header h1 {
+  cursor: default;
+}
+
+/*Header.js*/
+.main-image {
+  width: 100%;
+  height: 15rem;
+
+  z-index: 0;
+  overflow: hidden;
+}
+
+/*Header.js*/
+.main-image img {
+  width: 110%;
+  height: 100%;
+
+  object-fit: cover;
+  transform: rotateZ(-5deg) translateY(-4rem) translateX(-1rem);
+}
+
+/*HeaderCart.js*/
+.header-cart {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  cursor: pointer;
+  padding: 0.6rem 1.7rem;
+
+  border-radius: 1rem;
+  border-style: none;
+
+  color: #fff;
+  background-color: #6b3223;
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.5);
+}
+
+/*HeaderCart.js*/
+.item-amount {
+  padding: 0.3rem 0.6rem;
+
+  box-shadow: 0 0.2rem 0.4rem 0 rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+
+  font-weight: 400;
+  color: #fff;
+  background-color: #c23d18;
+}
+
+/*HeaderCart.js*/
+.cart-text {
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/*HeaderCart.js*/
+.header-cart:hover,
+.header-cart:active {
+  box-shadow: 0 0.2rem 0.7rem 0 rgba(0, 0, 0, 0.3);
+  background-color: #422c2c;
+}
+
+.bump {
+  animation: bump 300ms ease-out;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 1rem 5rem;
+  }
+  .header h1 {
+    font-size: 1.7rem;
+  }
+  .header-cart {
+    padding: 0.3rem 1.2rem;
+    border-radius: 0.8rem;
+  }
+  .item-amount {
+    padding: 0.2rem 0.4rem;
+  }
+  .cart-text {
+    padding: 0.6rem;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 586px) {
+  .header {
+    padding: 0.8rem 4rem;
+  }
+  .header h1 {
+    font-size: 1.3rem;
+  }
+  .header-cart {
+    padding: 0.2rem 1rem;
+    border-radius: 0.8rem;
+  }
+  .item-amount {
+    padding: 0.2rem 0.4rem;
+  }
+  .cart-text {
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 415px) {
+  .header {
+    padding: 0.7rem 1.8rem;
+  }
+  .header h1 {
+    font-size: 1.3rem;
+  }
+  .header-cart {
+    padding: 0.1rem 0.7rem;
+    border-radius: 0.5rem;
+  }
+  .cart-text {
+    padding: 0.4rem;
+  }
+}
+
+@keyframes bump {
+  0% {
+    transform: scale(1);
+  }
+  10% {
+    transform: scale(0.9);
+  }
+  30% {
+    transform: scale(1.1);
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
