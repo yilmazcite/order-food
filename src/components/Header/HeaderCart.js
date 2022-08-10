@@ -22,7 +22,7 @@ const HeaderCart = () => {
       setBtnBump(false);
     }, 300);
 
-    //the timer works with a time limit of 500 ms.
+    //the timer works with a time limit of 300 ms.
     //if items are added to the card rapidly, on each click, the timer should be updated.
     return () => {
       clearTimeout(timer);
