@@ -80,6 +80,15 @@ form button:active {
   }
 }
 
+@media (max-width: 586px) {
+  form button:nth-of-type(1) {
+    margin-left: 1rem;
+    color: #c13d18;
+    background-color: transparent;
+    font-weight: 600;
+  }
+}
+
 @media (max-width: 481px) {
   div input {
     width: 75%;
