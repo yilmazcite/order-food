@@ -130,6 +130,12 @@ li {
 }
 
 /*CartItem.js*/
+.items-to-be-ordered {
+  font-size: 0.7rem;
+  scroll-behavior: auto;
+}
+
+/*CartItem.js*/
 .cart-items-container button {
   cursor: pointer;
 
@@ -146,9 +152,30 @@ li {
 
 /*CartItem.js*/
 .cart-items-container button:hover,
-.cart-items-container button:active {
+.cart-items-container button:active,
+.order-sent-close-btn:hover,
+.order-sent-close-btn:active {
   box-shadow: 0 0.2rem 0.7rem 0 rgba(0, 0, 0, 0.3);
   background-color: #422c2c;
+}
+
+/*Cart.js*/
+.order-sent-close-btn {
+  cursor: pointer;
+  margin-top: 1rem;
+  padding: 0.6rem 1rem;
+
+  border: none;
+  border-radius: 1.25rem;
+
+  background-color: #c13d18;
+  color: #fff;
+  box-shadow: 0 0.2rem 0.2rem 0 rgba(0, 0, 0, 0.6);
+}
+
+.order-success,
+.receive-order {
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
@@ -189,6 +216,9 @@ li {
     font-size: 0.7rem;
     border-radius: 0.5rem;
   }
+  .items-to-be-ordered {
+    font-size: 0.6rem;
+  }
 }
 
 @media (max-width: 481px) {
@@ -215,6 +245,13 @@ li {
   .buttons button {
     padding: 0.4rem;
     font-size: 0.7rem;
+  }
+  .order-success,
+  .receive-order {
+    font-size: 0.9rem;
+  }
+  .items-to-be-ordered {
+    font-size: 0.5rem;
   }
 }
 
