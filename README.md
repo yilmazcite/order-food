@@ -1,8 +1,11 @@
 # Order Food
 
-<li>A food ordering project with a responsive design.</li>
-<li>It was made using React.</li>
+<li>A food ordering project with a responsive design, made using React.</li>
+<li>The menu data, which was previously hard-coded, is now retrieved from Firebase.</li>
+<li>Possible errors are handled and user conditionally receives an error message if the data is not successfully fetched.</li>
 <li>There are selected meals in the menu from which the user can singularly or plurally add items to the cart and can remove items from the cart.</li>
+<li>The user can order the items in the cart by filling out the checkout form which is then also sent to Firebase.</li>
+<li>A simple form validation is also used for the checkout form.</li>
 <li>Things I have tried for the first time in this project include using useEffect, useContext, useReducer, useRef, and using Fragment.</li><br>
 
 <b>Check the app at</b> https://yilmazcite.github.io/order-food/
