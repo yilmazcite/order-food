@@ -5,6 +5,7 @@ export const CartContext = createContext({});
 const CART_STATE = {
   ADD_ITEM: "add-item",
   REMOVE_ITEM: "remove-item",
+  CLEAR_CART: "clear-cart",
 };
 
 const defaultCartState = {
@@ -83,6 +84,10 @@ const cartReducer = (state, action) => {
     };
   }
 
+  if (action.type === CART_STATE.CLEAR_CART) {
+    return defaultCartState;
+  }
+
   return defaultCartState;
 };
 
@@ -98,12 +103,16 @@ const CartCtxProvider = (props) => {
   const removeCartItem = (id) => {
     dispatchCartState({ type: CART_STATE.REMOVE_ITEM, id: id });
   };
+  const clearCartItems = () => {
+    dispatchCartState({ type: CART_STATE.CLEAR_CART });
+  };
 
   const cartContext = {
     items: cartState.items,
     totalAmount: cartState.totalAmount,
     addItem: addCartItem,
     removeItem: removeCartItem,
+    clearCart: clearCartItems,
   };
 
   return (
